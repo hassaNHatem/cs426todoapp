@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    android:background="@color/purple_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/pic"
+
+
+        />
+    <TextView
+        android:paddingTop="10sp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/pic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:text="task1 "
+        android:textSize="20sp"
+
+        android:id="@+id/todotitle"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/todotitle"
+        android:textColor="@color/black"
+        android:text="test"
+        app:layout_constraintLeft_toLeftOf="@+id/todotitle"
+        android:textSize="15sp"
+        android:id="@+id/disc"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disc"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
